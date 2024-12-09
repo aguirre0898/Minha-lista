@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lista de Tarefas</h1>
+    <form id="task-form">
+      <input type="text" id="task-name" placeholder="Tarefa" required />
+      <input type="date" id="task-deadline" required />
+      <select id="task-priority" required>
+        <option value="" disabled selected>Prioridade</option>
+        <option value="Alta">Alta</option>
+        <option value="Média">Média</option>
+        <option value="Baixa">Baixa</option>
+      </select>
+      <button type="submit">Adicionar</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Tarefa</th>
+          <th>Prazo</th>
+          <th>Prioridade</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="task-list"></tbody>
+    </table>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
